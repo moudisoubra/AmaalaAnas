@@ -54,7 +54,7 @@ public class JourneyPage : PageBase
     {
         base.Init();
         //PlayVideoBtn.onClick.AddListener(() => PlayVideo());
-        StopVideoBtn.onClick.AddListener(() => StopVideo());
+        //StopVideoBtn.onClick.AddListener(() => StopVideo());
 
         GameManager.instance.IncrementInitPages();
         Debug.Log("Init JourneyPage");
