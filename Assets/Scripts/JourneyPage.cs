@@ -53,8 +53,8 @@ public class JourneyPage : PageBase
     public override void Init()
     {
         base.Init();
-        PlayVideoBtn.onClick.AddListener(() => PlayVideo());
-        StopVideoBtn.onClick.AddListener(() => StopVideo());
+        //PlayVideoBtn.onClick.AddListener(() => PlayVideo());
+        //StopVideoBtn.onClick.AddListener(() => StopVideo());
 
         GameManager.instance.IncrementInitPages();
         Debug.Log("Init JourneyPage");
