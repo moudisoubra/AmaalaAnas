@@ -38,7 +38,7 @@ public class CameraMoving : MonoBehaviour
     {
         if (CanMove)
         {
-            CanMove = false;
+            //CanMove = false;
             Targets[targetIndex].TransformPoint(Vector3.zero);
             iTween.ValueTo(gameObject, iTween.Hash(
                 "from", CurrentPos,
