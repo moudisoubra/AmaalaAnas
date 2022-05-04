@@ -11,7 +11,7 @@ public class GalleryPage : PageBase
     public GallerySwiper MainGallerySwiper;
 
     //public Image AnimateImage;
-    public Sprite[] GalleryImages;
+    //public Sprite[] GalleryImages;
     public GameObject BigGalleryObj;
     public GameObject BigGalleryContainer;
     public GameObject BigGalleryItemPrefab;
@@ -67,16 +67,16 @@ public class GalleryPage : PageBase
                 btn.SetActive(true);
             }
         });
-        foreach (Sprite img in GalleryImages)
-        {
-            GameObject newGalleryItem = Instantiate(GalleryItemPrefab, Container.transform);
-            newGalleryItem.GetComponent<GalleryItem>().Init(img, this, true);
-            Images.Add(newGalleryItem.GetComponent<GalleryItem>());
+        //foreach (Sprite img in GalleryImages)
+        //{
+        //    GameObject newGalleryItem = Instantiate(GalleryItemPrefab, Container.transform);
+        //    newGalleryItem.GetComponent<GalleryItem>().Init(img, this, true);
+        //    Images.Add(newGalleryItem.GetComponent<GalleryItem>());
 
-            // Init big gallery
-            GameObject newBigGalleryItem = Instantiate(BigGalleryItemPrefab, BigGalleryContainer.transform);
-            newBigGalleryItem.GetComponent<GalleryItem>().Init(img, this, false);
-        }
+        //    // Init big gallery
+        //    GameObject newBigGalleryItem = Instantiate(BigGalleryItemPrefab, BigGalleryContainer.transform);
+        //    newBigGalleryItem.GetComponent<GalleryItem>().Init(img, this, false);
+        //}
         BigGalleryObj.SetActive(false);
         GameManager.instance.IncrementInitPages();
         Debug.Log("Init GalleryPage");
