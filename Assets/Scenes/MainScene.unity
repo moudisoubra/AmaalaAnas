@@ -1644,7 +1644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1708756337
 Transform:
   m_ObjectHideFlags: 0
@@ -1915,7 +1915,7 @@ PrefabInstance:
         type: 3}
       propertyPath: waves
       value: 
-      objectReference: {fileID: 321615687}
+      objectReference: {fileID: 1708756336}
     - target: {fileID: 2377931433092196994, guid: beaacc5f5995eb04fa0d92f12e9ce7bf,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1965,6 +1965,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377931434161644796, guid: beaacc5f5995eb04fa0d92f12e9ce7bf,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377931434161644796, guid: beaacc5f5995eb04fa0d92f12e9ce7bf,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377931434161644796, guid: beaacc5f5995eb04fa0d92f12e9ce7bf,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 519420033}
+    - target: {fileID: 2377931434161644796, guid: beaacc5f5995eb04fa0d92f12e9ce7bf,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377931434161644796, guid: beaacc5f5995eb04fa0d92f12e9ce7bf,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: BackCameraToStartPos
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377931434161644796, guid: beaacc5f5995eb04fa0d92f12e9ce7bf,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CameraMoving, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377931434161644796, guid: beaacc5f5995eb04fa0d92f12e9ce7bf,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2377931434216018232, guid: beaacc5f5995eb04fa0d92f12e9ce7bf,
         type: 3}
