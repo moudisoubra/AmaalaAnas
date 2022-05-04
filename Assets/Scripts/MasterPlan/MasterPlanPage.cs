@@ -11,10 +11,14 @@ public class MasterPlanPage : PageBase
     public ScrollRect ScrollRect;
     public ContentItemAnim[] Contents;
 
-    float scrollPosition = 0;
+    public float scrollPosition = 0;
+
     bool showLastContentItems = false;
     bool Show3DMasterPlan = false;
     public GameObject waves;
+    public bool firstIteration = true;
+    public bool secondIteration = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,11 +29,22 @@ public class MasterPlanPage : PageBase
     void Update()
     {
         scrollPosition = Mathf.Clamp01(ScrollRect.verticalNormalizedPosition) * 100;
-        if (!showLastContentItems && scrollPosition < 50)
+        if (firstIteration && scrollPosition < 75)
         {
-            showLastContentItems = true;
+            //showLastContentItems = true;
             Contents[2].ShowContent();
             Contents[3].ShowContent();
+            Debug.Log("first");
+            firstIteration = false;
+
+        }
+        if (secondIteration && scrollPosition < 40)
+        {
+            Contents[4].ShowContent();
+            Contents[5].ShowContent();
+            Debug.Log("second");
+            secondIteration = false;
+
         }
 
         //Debug.Log("verticalNormalizedPosition: " + scrollPosition);
