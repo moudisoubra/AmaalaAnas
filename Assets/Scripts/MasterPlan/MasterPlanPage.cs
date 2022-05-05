@@ -18,6 +18,8 @@ public class MasterPlanPage : PageBase
     public GameObject waves;
     public bool firstIteration = true;
     public bool secondIteration = true;
+    public bool thirdIteration = true;
+    public bool forthIteration = true;
 
     // Start is called before the first frame update
     void Start()
@@ -34,19 +36,31 @@ public class MasterPlanPage : PageBase
             //showLastContentItems = true;
             Contents[2].ShowContent();
             Contents[3].ShowContent();
-            Debug.Log("first");
+            Debug.Log("firstIteration");
             firstIteration = false;
 
         }
-        if (secondIteration && scrollPosition < 40)
+        if (secondIteration && scrollPosition < 65)
         {
             Contents[4].ShowContent();
-            Contents[5].ShowContent();
-            Debug.Log("second");
+            Debug.Log("secondIteration");
             secondIteration = false;
 
         }
+        if (thirdIteration && scrollPosition < 40)
+        {
+            Contents[5].ShowContent();
+            Debug.Log("thirdIteration");
+            thirdIteration = false;
 
+        }
+        if (forthIteration && scrollPosition < 20)
+        {
+            Contents[6].ShowContent();
+            Debug.Log("forthIteration");
+            forthIteration = false;
+
+        }
         //Debug.Log("verticalNormalizedPosition: " + scrollPosition);
     }
 
