@@ -7,10 +7,14 @@ namespace BrunoMikoski.TextJuicer.Modifiers
     public sealed class TextJuicerGradientModifier : TextJuicerVertexModifier
     {
         [SerializeField]
-        private Gradient gradient;
+        private Gradient entryGradient;
+        [SerializeField]
+        private Gradient exitgradient;
 
         private Color32[] newVertexColors;
         private Color targetColor;
+
+        public bool exit;
 
         public override bool ModifyGeometry
         {
@@ -32,7 +36,7 @@ namespace BrunoMikoski.TextJuicer.Modifiers
             float progress,
             TMP_MeshInfo[] meshInfo)
         {
-            if (gradient == null)
+            if (entryGradient == null || exitgradient == null)
                 return;
 
             int materialIndex = characterData.MaterialIndex;
@@ -41,7 +45,10 @@ namespace BrunoMikoski.TextJuicer.Modifiers
 
             int vertexIndex = characterData.VertexIndex;
 
-            targetColor = gradient.Evaluate( characterData.Progress );
+            if(exit)
+                targetColor = exitgradient.Evaluate( characterData.Progress );
+            else
+                targetColor = entryGradient.Evaluate(characterData.Progress);
 
             newVertexColors[vertexIndex + 0] = targetColor;
             newVertexColors[vertexIndex + 1] = targetColor;

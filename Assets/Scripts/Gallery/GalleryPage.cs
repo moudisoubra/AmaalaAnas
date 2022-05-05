@@ -38,6 +38,7 @@ public class GalleryPage : PageBase
     {
         base.Init();
         Images.Clear();
+        if (Container) 
         ClearContainer(Container);
         ClearContainer(BigGalleryContainer);
         /*string imagesPath = Application.persistentDataPath + "/Images/";

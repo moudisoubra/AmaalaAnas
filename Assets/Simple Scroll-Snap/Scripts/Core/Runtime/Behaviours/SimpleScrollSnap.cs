@@ -336,8 +336,12 @@ namespace DanielLochner.Assets.SimpleScrollSnap
             }
             releaseSpeed = Velocity.magnitude;
         }
+        public void SetStartingPanel(int i)
+        {
+            startingPanel = i;
+        }
 
-        private void Setup()
+        public void Setup()
         {
             if (NumberOfPanels == 0) return;
 
@@ -456,6 +460,7 @@ namespace DanielLochner.Assets.SimpleScrollSnap
             else if (!isDragging && (ScrollRect.velocity.magnitude <= thresholdSpeedToSnap || thresholdSpeedToSnap == -1f))
             {
                 SelectPanel();
+                Debug.Log("Move Panel");
             }
         }
         private void HandleOcclusionCulling(bool forceUpdate = false)
