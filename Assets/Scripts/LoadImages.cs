@@ -15,7 +15,7 @@ public class LoadImages : MonoBehaviour
     public List<string> videos = new List<string>();
     public VideoPlayer player;
     public List<VideoPlayer> videoPlayers = new List<VideoPlayer>();
-
+    public SpawnImages spawnImg;
     public bool imgsLoaded;
     public bool vidsLoaded;
     public bool activated;
@@ -38,7 +38,8 @@ public class LoadImages : MonoBehaviour
                     "LoadAll",
                     Directory.GetFiles(filesLocation, "*.jpg", SearchOption.AllDirectories)
                 );
-
+                spawnImg.images = images;
+                spawnImg.enabled = true;
                 imgsLoaded = true;
             }
             if (videofilesLocation != "")
