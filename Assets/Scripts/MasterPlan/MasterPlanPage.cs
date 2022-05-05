@@ -47,20 +47,20 @@ public class MasterPlanPage : PageBase
             secondIteration = false;
 
         }
-        if (thirdIteration && scrollPosition < 40)
-        {
-            Contents[5].ShowContent();
-            Debug.Log("thirdIteration");
-            thirdIteration = false;
+        //if (thirdIteration && scrollPosition < 40)
+        //{
+        //    Contents[5].ShowContent();
+        //    Debug.Log("thirdIteration");
+        //    thirdIteration = false;
 
-        }
-        if (forthIteration && scrollPosition < 20)
-        {
-            Contents[6].ShowContent();
-            Debug.Log("forthIteration");
-            forthIteration = false;
+        //}
+        //if (forthIteration && scrollPosition < 20)
+        //{
+        //    Contents[6].ShowContent();
+        //    Debug.Log("forthIteration");
+        //    forthIteration = false;
 
-        }
+        //}
         //Debug.Log("verticalNormalizedPosition: " + scrollPosition);
     }
 

@@ -12,6 +12,7 @@ public class VideoURL : MonoBehaviour
     public LoadImages liScript;
 
     public bool animated;
+    public bool play;
     void Start()
     {
         SetVideo();
@@ -23,6 +24,16 @@ public class VideoURL : MonoBehaviour
         {
             SetVideo();
         }
+
+        if(player != null && !player.isPlaying && url != "" && play)
+        {
+            PlayVideo();
+            play = false;
+        }
+    }
+    public void SetPlay(bool b)
+    {
+        play = b;
     }
     void CheckDimensions(string url)
     {
