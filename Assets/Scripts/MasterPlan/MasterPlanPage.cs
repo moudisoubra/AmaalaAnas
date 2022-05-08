@@ -98,6 +98,13 @@ public class MasterPlanPage : PageBase
         }
     }
 
+    public void SetBools()
+    {
+        firstIteration = true;
+        secondIteration = true;
+        thirdIteration = true;
+        forthIteration = true;
+    }
     public void OpenMasterPlan3D(bool val)
     {
         Show3DMasterPlan = val;
