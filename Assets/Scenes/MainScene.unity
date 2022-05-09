@@ -1232,6 +1232,7 @@ GameObject:
   - component: {fileID: 60454215}
   - component: {fileID: 60454217}
   - component: {fileID: 60454216}
+  - component: {fileID: 60454218}
   m_Layer: 5
   m_Name: Amaala Background
   m_TagString: Untagged
@@ -1299,6 +1300,24 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &60454218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60454214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a11a2f6cde4f62d4e9686bc0cdbda23c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 60454216}
+  player: {fileID: 354462770}
+  count: 0
+  currentFrame: 0
+  finished: 0
+  started: 0
 --- !u!1 &65419446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2587,6 +2606,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1085392762}
         m_TargetAssemblyTypeName: VideoURL, Assembly-CSharp
         m_MethodName: PlayVideo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2083685432}
+        m_TargetAssemblyTypeName: CheckIfVideoEnded, Assembly-CSharp
+        m_MethodName: SetStarted
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8412,6 +8443,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1333243424}
+        m_TargetAssemblyTypeName: CheckIfVideoEnded, Assembly-CSharp
+        m_MethodName: SetStarted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &630041805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14173,6 +14216,7 @@ GameObject:
   - component: {fileID: 1114432349}
   - component: {fileID: 1114432351}
   - component: {fileID: 1114432350}
+  - component: {fileID: 1114432352}
   m_Layer: 5
   m_Name: Globe
   m_TagString: Untagged
@@ -14240,6 +14284,24 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1114432352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114432348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a11a2f6cde4f62d4e9686bc0cdbda23c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1114432350}
+  player: {fileID: 1979333189}
+  count: 0
+  currentFrame: 0
+  finished: 0
+  started: 0
 --- !u!1 &1119578031
 GameObject:
   m_ObjectHideFlags: 0
@@ -15571,6 +15633,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 60454218}
+        m_TargetAssemblyTypeName: CheckIfVideoEnded, Assembly-CSharp
+        m_MethodName: SetStarted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1270096526
 GameObject:
   m_ObjectHideFlags: 0
@@ -16890,6 +16964,7 @@ GameObject:
   - component: {fileID: 1333243421}
   - component: {fileID: 1333243423}
   - component: {fileID: 1333243422}
+  - component: {fileID: 1333243424}
   m_Layer: 5
   m_Name: Hidden Jewel
   m_TagString: Untagged
@@ -16957,6 +17032,24 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1333243424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333243420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a11a2f6cde4f62d4e9686bc0cdbda23c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1333243422}
+  player: {fileID: 411671141}
+  count: 0
+  currentFrame: 0
+  finished: 0
+  started: 0
 --- !u!1 &1333259897
 GameObject:
   m_ObjectHideFlags: 0
@@ -21046,6 +21139,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1749385887}
+        m_TargetAssemblyTypeName: CheckIfVideoEnded, Assembly-CSharp
+        m_MethodName: SetStarted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1638681290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22655,6 +22760,7 @@ GameObject:
   - component: {fileID: 1749385886}
   - component: {fileID: 1749385889}
   - component: {fileID: 1749385888}
+  - component: {fileID: 1749385887}
   m_Layer: 5
   m_Name: 'OurJourneyVideo '
   m_TagString: Untagged
@@ -22689,6 +22795,24 @@ RectTransform:
   m_AnchoredPosition: {x: 3, y: 0}
   m_SizeDelta: {x: 2732, y: 1536.8}
   m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1749385887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749385885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a11a2f6cde4f62d4e9686bc0cdbda23c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1749385888}
+  player: {fileID: 13904261}
+  count: 0
+  currentFrame: 0
+  finished: 0
+  started: 0
 --- !u!114 &1749385888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25325,6 +25449,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1114432352}
+        m_TargetAssemblyTypeName: CheckIfVideoEnded, Assembly-CSharp
+        m_MethodName: SetStarted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1998769045
 GameObject:
   m_ObjectHideFlags: 0
@@ -26153,6 +26289,7 @@ GameObject:
   - component: {fileID: 2083685429}
   - component: {fileID: 2083685431}
   - component: {fileID: 2083685430}
+  - component: {fileID: 2083685432}
   m_Layer: 5
   m_Name: Vision
   m_TagString: Untagged
@@ -26220,6 +26357,24 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &2083685432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083685428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a11a2f6cde4f62d4e9686bc0cdbda23c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 2083685430}
+  player: {fileID: 1085392765}
+  count: 0
+  currentFrame: 0
+  finished: 0
+  started: 0
 --- !u!1 &2085010729
 GameObject:
   m_ObjectHideFlags: 0

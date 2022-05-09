@@ -30,6 +30,7 @@ public class VideoURL : MonoBehaviour
             PlayVideo();
             play = false;
         }
+
     }
     public void SetPlay(bool b)
     {
